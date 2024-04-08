@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let search = +prompt("nhập id để tìm sách");
+        let book = [
+            {
+                name: 'Khoa học',
+                id: 1
+            },
+            {
+                name: 'Lịch sử',
+                id: 2
+            }
+        ];
+        let a = book.find((item)=>{
+            return item.id === search
+        })
+        console.log(a);
+    </script>
+</body>
+</html>
